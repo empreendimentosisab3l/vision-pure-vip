@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Vision Pure | Oferta VIP Exclusiva - Ultima Chance</title>
+   <meta name="description" content="Voce foi sorteado(a) como Cliente VIP. Garanta sua Vision Pure com desconto unico antes que o estoque acabe.">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+   <!-- HEADER VIP -->
+   <header class="vip-header">
+      <div class="vip-header-inner">
+         <p class="vip-logo">VISION PURE <small>VIP</small></p>
+         <p class="vip-header-tag">Oferta Exclusiva - Ultima Chance</p>
+      </div>
+   </header>
+
+   <!-- HERO VIP -->
+   <section class="vp-hero">
+      <div class="vp-hero-inner">
+         <span class="vip-badge">Parabens! Voce e Cliente VIP</span>
+         <h1>
+            Voce foi <strong>sorteado(a)</strong> para receber<br>
+            a oferta mais exclusiva da Vision Pure
+         </h1>
+         <p class="vp-hero-sub">
+            Apenas <em>2% dos visitantes</em> recebem esse desconto. Esta oferta nao volta:
+            ao sair desta pagina, o valor original sera restaurado <em>automaticamente</em>.
+         </p>
+         <div class="vp-hero-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 16.5L4 8.5h16z"></path></svg>
+         </div>
+         <div class="vp-countdown" role="timer" aria-label="Tempo restante da oferta VIP">
+            <div class="vp-countdown-cell">
+               <span class="vp-countdown-number" id="cd-min">14</span>
+               <span class="vp-countdown-label">Minutos</span>
+            </div>
+            <div class="vp-countdown-cell">
+               <span class="vp-countdown-number" id="cd-sec">59</span>
+               <span class="vp-countdown-label">Segundos</span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- OFERTAS -->
+   <section class="vp-offers" aria-label="Escolha seu pacote Vision Pure">
+      <div class="vp-offers-head">
+         <h2>Sua oferta VIP liberada</h2>
+         <p>Selecione o pacote ideal - <strong>frete gratis</strong> para todo Brasil</p>
+      </div>
+      <div class="vp-offers-inner">
+
+         <!-- 1 POTE -->
+         <a href="https://checkout.payt.com.br/65204d4dc66908ab785e93b1a70942ae?split=12&src=vision-back" class="vp-card" aria-label="Comprar 1 pote Vision Pure VIP">
+            <img src="https://jornalife.com/pv-vision/img/1pote.jpg" alt="Vision Pure - 1 Pote - 30 dias - 12x R$ 20,37" class="vp-card-img">
+         </a>
+
+         <!-- 3 POTES -->
+         <a href="https://checkout.payt.com.br/4d840fd2a4bb11f7d7012e3b6573ff7e?split=12&src=vision-back" class="vp-card" aria-label="Comprar 3 potes Vision Pure VIP">
+            <img src="https://jornalife.com/pv-vision/img/3potes.jpg" alt="Vision Pure - 3 Potes - 90 dias - 12x R$ 42,46" class="vp-card-img">
+         </a>
+
+         <!-- 6 POTES - FEATURED -->
+         <a href="https://checkout.payt.com.br/5eb40d1634aa01d823b16d5015fcc3d5?split=12&src=vision-back" class="vp-card featured" aria-label="Comprar 6 potes Vision Pure VIP">
+            <img src="https://jornalife.com/pv-vision/img/6potes.jpg" alt="Vision Pure - 6 Potes - 180 dias - 12x R$ 60,19" class="vp-card-img">
+         </a>
+
+      </div>
+   </section>
+
+   <!-- SATISFACAO -->
+   <section class="vp-satisfaction" aria-label="Avaliacoes dos clientes">
+      <div class="vp-satisfaction-inner">
+         <h2 class="vp-satisfaction-title">O que nossos clientes dizem</h2>
+         <div class="vp-satisfaction-rate">
+            <span class="vp-satisfaction-rate-num">99</span>
+            <span class="vp-satisfaction-rate-pct">%</span>
+         </div>
+         <p class="vp-satisfaction-sub">Taxa de satisfacao</p>
+         <div class="vp-satisfaction-stars" aria-label="5 de 5 estrelas">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+         </div>
+         <p class="vp-satisfaction-reviews">Baseado em <strong>11.482 avaliacoes</strong> reais</p>
+      </div>
+   </section>
+
+   <!-- GARANTIA 365 -->
+   <section class="vp-guarantee" aria-label="Garantia 365 dias">
+      <div class="vp-guarantee-card">
+         <img src="https://jornalife.com/pv-vision/img/produto-garantia.webp" alt="Selo de Garantia 365 dias" class="vp-guarantee-seal">
+         <h2 class="vp-guarantee-h1">100% de Satisfacao Garantida</h2>
+         <h3 class="vp-guarantee-h2">Garantia de Reembolso de 365 Dias</h3>
+
+         <p>O <strong>Vision Pure</strong> conta com uma garantia incondicional de reembolso total valida por ate <strong>365 dias</strong> apos a sua compra.</p>
+
+         <p>Se voce nao ficar completamente satisfeito(a) com o produto, com seus resultados ou com a sua experiencia dentro desses <strong>365 dias</strong>, basta nos avisar enviando um e-mail para <strong>sac@visionpure.com.br</strong> e nos faremos o reembolso total do seu investimento.</p>
+
+         <p>Isso mesmo: voce pode devolver todos os potes, estejam eles cheios ou vazios, a qualquer momento dentro do prazo de <strong>365 dias</strong> da compra e recebera o reembolso completo.</p>
+
+         <p class="vp-guarantee-final">Faca seu pedido hoje, sem riscos - nos garantimos seus resultados com o nosso proprio dinheiro.</p>
+
+         <div class="vp-reclame-badge">
+            <img src="https://jornalife.com/pv-vision/img/selo-garantia.webp" alt="Verificada por Reclame Aqui">
+         </div>
+      </div>
+   </section>
+
+   <!-- QUALIDADE / CERTS -->
+   <section class="vp-quality" aria-label="Qualidade certificada">
+      <div class="vp-quality-inner">
+         <div class="vp-quality-stars" aria-label="5 estrelas">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+         </div>
+         <h2 class="vp-quality-title"><strong>100%</strong> Garantia de Qualidade</h2>
+         <p>O <strong>Vision Pure</strong> e produzido em laboratorio certificado, seguindo rigorosos padroes internacionais de fabricacao (GMP) e todas as exigencias da Anvisa.</p>
+         <p>Cada lote passa por <strong>testes independentes</strong> de pureza e potencia antes de chegar ate voce - porque a sua visao merece apenas o melhor.</p>
+         <p>Trabalhamos apenas com fornecedores premium e ingredientes de origem rastreada. E por isso que garantimos cada pote de <strong>Vision Pure</strong> que vendemos.</p>
+         <div class="vp-quality-certs">
+            <div class="cert">ANVISA</div>
+            <div class="cert">GMP</div>
+            <div class="cert">Reclame Aqui</div>
+         </div>
+      </div>
+   </section>
+
+   <!-- RESULTADOS REAIS -->
+   <section class="vp-results" aria-label="Resultados reais">
+      <div class="vp-results-inner">
+         <h2 class="vp-results-title">Resultados Reais do <strong>Vision Pure&reg;</strong></h2>
+         <span class="vp-results-highlight">Historias que Transformam Vidas</span>
+
+         <figure class="vp-polaroid">
+            <img src="https://jornalife.com/pv-vision/img/depoimento1.jpg" alt="Clientes Vision Pure">
+         </figure>
+
+         <!-- Instagram review 1 -->
+         <article class="vp-ig-card">
+            <header class="vp-ig-card-top">
+               <span class="vp-ig-logo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                     <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                     <circle cx="12" cy="12" r="4"></circle>
+                     <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle>
+                  </svg>
+                  Instagram
+               </span>
+            </header>
+            <div class="vp-ig-body">
+               <div class="vp-ig-avatar">SA</div>
+               <div class="vp-ig-content">
+                  <div class="vp-ig-name-row">
+                     <span class="vp-ig-name">Sofia Almeida</span>
+                     <span class="vp-ig-verified" aria-label="Verificada">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L9.84 2.4 6.66 1.92 5.4 4.92 2.4 6.18l.48 3.18L0 12l2.4 2.4-.48 3.18 3 1.26L6.18 21.6l3.18-.48L12 24l2.16-2.4 3.18.48 1.26-3 3-1.26-.48-3.18L24 12l-2.4-2.16.48-3.18-3-1.26L17.82 2.4 14.64 2.4z"></path><path d="M10 16.4l-4-4 1.4-1.4 2.6 2.6 5.6-5.6L17 9.4z" fill="#fff"></path></svg>
+                     </span>
+                     <span class="vp-ig-stars" aria-label="5 estrelas">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                     </span>
+                     <span class="vp-ig-date">15 de abril de 2026</span>
+                  </div>
+                  <p class="vp-ig-text">Aos 49 anos eu ja nao conseguia ler nada de perto sem oculos e meu grau so aumentava. Comecei a tomar VISION PURE ha 2 meses e na consulta de ontem meu oftalmologista reduziu minha receita pela primeira vez em anos! Voltei a ler livros e mensagens no celular sem desconforto.</p>
+                  <p class="vp-ig-hashtags">#visaonatural #visionpure #saudeocular</p>
+                  <div class="vp-ig-actions">
+                     <span>215 curtidas</span>
+                     <span>Responder</span>
+                     <span class="translate">Ver traducao</span>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <!-- Instagram review 2 -->
+         <article class="vp-ig-card">
+            <header class="vp-ig-card-top">
+               <span class="vp-ig-logo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                     <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                     <circle cx="12" cy="12" r="4"></circle>
+                     <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle>
+                  </svg>
+                  Instagram
+               </span>
+            </header>
+            <div class="vp-ig-body">
+               <div class="vp-ig-avatar alt">PR</div>
+               <div class="vp-ig-content">
+                  <div class="vp-ig-name-row">
+                     <span class="vp-ig-name">Patricia Ribeiro</span>
+                     <span class="vp-ig-verified" aria-label="Verificada">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L9.84 2.4 6.66 1.92 5.4 4.92 2.4 6.18l.48 3.18L0 12l2.4 2.4-.48 3.18 3 1.26L6.18 21.6l3.18-.48L12 24l2.16-2.4 3.18.48 1.26-3 3-1.26-.48-3.18L24 12l-2.4-2.16.48-3.18-3-1.26L17.82 2.4 14.64 2.4z"></path><path d="M10 16.4l-4-4 1.4-1.4 2.6 2.6 5.6-5.6L17 9.4z" fill="#fff"></path></svg>
+                     </span>
+                     <span class="vp-ig-stars" aria-label="5 estrelas">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                     </span>
+                     <span class="vp-ig-date">3 de janeiro de 2026</span>
+                  </div>
+                  <p class="vp-ig-text">Trabalho 9h por dia em frente ao computador e vivia com olho seco, dor de cabeca e visao embacada no fim do expediente. Em 3 semanas tomando VISION PURE esses sintomas praticamente sumiram. Hoje fecho meu dia sem desconforto nenhum. Recomendo demais!</p>
+                  <p class="vp-ig-hashtags">#visionpure #olhossaudaveis #saudeocular</p>
+                  <div class="vp-ig-actions">
+                     <span>348 curtidas</span>
+                     <span>Responder</span>
+                     <span class="translate">Ver traducao</span>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+      </div>
+   </section>
+
+   <!-- URGENCY FINAL -->
+   <section class="vp-final-urgency">
+      <div class="vp-final-urgency-inner">
+         <span class="vip-badge">Esta Oferta Nao Volta</span>
+         <h2>
+            Garanta sua <strong>Vision Pure VIP</strong> agora
+            <span class="accent">antes que o estoque acabe</span>
+         </h2>
+         <div class="vp-hero-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 16.5L4 8.5h16z"></path></svg>
+         </div>
+         <div class="vp-countdown" role="timer">
+            <div class="vp-countdown-cell">
+               <span class="vp-countdown-number" id="cd-min-2">14</span>
+               <span class="vp-countdown-label">Minutos</span>
+            </div>
+            <div class="vp-countdown-cell">
+               <span class="vp-countdown-number" id="cd-sec-2">59</span>
+               <span class="vp-countdown-label">Segundos</span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- OFERTAS (repete) -->
+   <section class="vp-offers" aria-label="Escolha seu pacote Vision Pure">
+      <div class="vp-offers-inner">
+
+         <a href="https://checkout.payt.com.br/65204d4dc66908ab785e93b1a70942ae?split=12&src=vision-back" class="vp-card" aria-label="Comprar 1 pote Vision Pure VIP">
+            <img src="https://jornalife.com/pv-vision/img/1pote.jpg" alt="Vision Pure - 1 Pote - 30 dias - 12x R$ 20,37" class="vp-card-img">
+         </a>
+
+         <a href="https://checkout.payt.com.br/4d840fd2a4bb11f7d7012e3b6573ff7e?split=12&src=vision-back" class="vp-card" aria-label="Comprar 3 potes Vision Pure VIP">
+            <img src="https://jornalife.com/pv-vision/img/3potes.jpg" alt="Vision Pure - 3 Potes - 90 dias - 12x R$ 42,46" class="vp-card-img">
+         </a>
+
+         <a href="https://checkout.payt.com.br/5eb40d1634aa01d823b16d5015fcc3d5?split=12&src=vision-back" class="vp-card featured" aria-label="Comprar 6 potes Vision Pure VIP">
+            <img src="https://jornalife.com/pv-vision/img/6potes.jpg" alt="Vision Pure - 6 Potes - 180 dias - 12x R$ 60,19" class="vp-card-img">
+         </a>
+
+      </div>
+   </section>
+
+   <!-- FAQ -->
+   <section class="vp-faq" aria-label="Perguntas frequentes">
+      <div class="vp-faq-inner">
+         <h2 class="vp-faq-title">Perguntas Frequentes</h2>
+         <p class="vp-faq-subtitle">Tudo que voce precisa saber antes de comecar seu tratamento</p>
+
+         <details class="vp-faq-item">
+            <summary class="vp-faq-q">O Vision Pure e seguro para uso diario?</summary>
+            <p class="vp-faq-a">Sim. O Vision Pure e fabricado em laboratorio certificado, com ingredientes <strong>100% naturais</strong> (luteina, zeaxantina, vitaminas A, C, E e zinco) em doses dentro dos limites recomendados pela Anvisa. Cada lote passa por testes de pureza independentes. Mesmo assim, recomendamos consultar seu medico antes de iniciar qualquer suplementacao continua.</p>
+         </details>
+
+         <details class="vp-faq-item">
+            <summary class="vp-faq-q">Em quanto tempo eu vou perceber resultados?</summary>
+            <p class="vp-faq-a">A maioria dos nossos clientes comeca a sentir <strong>menos cansaco visual</strong> e mais nitidez ja nas primeiras 2 a 3 semanas. Para uma melhora completa na qualidade da visao e regeneracao das celulas oculares, recomendamos seguir o tratamento por pelo menos 90 dias. Quanto mais consistente o uso, melhores os resultados.</p>
+         </details>
+
+         <details class="vp-faq-item">
+            <summary class="vp-faq-q">Posso continuar usando meus oculos ou lentes durante o tratamento?</summary>
+            <p class="vp-faq-a">Pode e deve. O Vision Pure <strong>nao substitui</strong> oculos ou lentes - ele atua nutrindo as celulas oculares por dentro. A medida que sua visao melhora ao longo do tratamento, seu proprio oftalmologista pode reavaliar e ajustar o grau na proxima consulta.</p>
+         </details>
+
+         <details class="vp-faq-item">
+            <summary class="vp-faq-q">Como devo tomar o Vision Pure?</summary>
+            <p class="vp-faq-a">Tome <strong>2 capsulas por dia</strong>, preferencialmente uma de manha e outra a noite, junto com as refeicoes para melhor absorcao. Cada pote contem 60 capsulas, suficiente para 30 dias de uso continuo. A consistencia diaria e o que faz toda a diferenca.</p>
+         </details>
+
+         <details class="vp-faq-item">
+            <summary class="vp-faq-q">Vision Pure tem contraindicacao ou efeitos colaterais?</summary>
+            <p class="vp-faq-a">Por ser uma formula natural em doses seguras, o Vision Pure nao tem efeitos colaterais conhecidos quando tomado conforme indicado. <strong>Nao e recomendado para gestantes, lactantes e menores de 18 anos</strong> sem orientacao medica. Se voce tem alguma condicao de saude pre-existente, converse com seu medico antes de iniciar.</p>
+         </details>
+
+         <details class="vp-faq-item">
+            <summary class="vp-faq-q">Posso tomar com outros medicamentos ou colirios?</summary>
+            <p class="vp-faq-a">Geralmente sim - o Vision Pure e compativel com a maioria dos medicamentos e colirios oftalmologicos. Mas se voce toma <strong>medicacao continua</strong> ou usa colirios prescritos, recomendamos avisar seu oftalmologista para garantir que nao haja interacao especifica com o seu caso.</p>
+         </details>
+
+         <details class="vp-faq-item">
+            <summary class="vp-faq-q">Quantos potes voces recomendam para resultados ideais?</summary>
+            <p class="vp-faq-a">A regeneracao ocular e um processo gradual. Para resultados duradouros, indicamos no minimo <strong>3 meses de uso continuo</strong> (3 potes). Para queixas mais persistentes ou idade avancada, o pacote de <strong>6 potes (180 dias)</strong> e o mais recomendado - alem de garantir o desconto VIP atual sem o risco de aumento de preco quando precisar repor.</p>
+         </details>
+
+         <details class="vp-faq-item">
+            <summary class="vp-faq-q">E se o Vision Pure nao funcionar para mim?</summary>
+            <p class="vp-faq-a">Voce esta protegido(a) pela nossa <strong>Garantia Incondicional de 365 Dias</strong>. Se em qualquer momento dentro desse prazo voce nao estiver totalmente satisfeito(a), basta nos enviar um e-mail e devolvemos 100% do valor investido - mesmo com os potes vazios. Esse e o nosso compromisso com voce.</p>
+         </details>
+
+      </div>
+   </section>
+
+   <!-- FOOTER -->
+   <footer class="vp-footer">
+      <div class="vp-footer-inner">
+         <p class="vp-footer-brand"><strong>Vision Pure</strong>&reg; - Site Oficial</p>
+         <p class="vp-footer-tag">Suplemento natural para saude ocular</p>
+         <nav class="vp-footer-links" aria-label="Links institucionais">
+            <a href="#">Termos de Uso</a>
+            <span class="sep">-</span>
+            <a href="#">Politica de Privacidade</a>
+            <span class="sep">-</span>
+            <a href="mailto:sac@visionpure.com.br">sac@visionpure.com.br</a>
+         </nav>
+         <p class="vp-footer-rights">&copy; 2026 Vision Pure. Todos os direitos reservados.</p>
+      </div>
+   </footer>
+
+   <script>
+      // Countdown timer (15 min)
+      (function () {
+         var end = Date.now() + 15 * 60 * 1000;
+         function pad(n) { return String(n).padStart(2, '0'); }
+         function tick() {
+            var rem = Math.max(0, end - Date.now());
+            var min = Math.floor(rem / 60000);
+            var sec = Math.floor((rem % 60000) / 1000);
+            var mins = pad(min), secs = pad(sec);
+            ['cd-min', 'cd-min-2'].forEach(function (id) {
+               var el = document.getElementById(id);
+               if (el) el.textContent = mins;
+            });
+            ['cd-sec', 'cd-sec-2'].forEach(function (id) {
+               var el = document.getElementById(id);
+               if (el) el.textContent = secs;
+            });
+            if (rem > 0) setTimeout(tick, 1000);
+         }
+         tick();
+      })();
+
+      // Live watching count - varies subtly
+      (function () {
+         var el = document.getElementById('live-watching-count');
+         if (!el) return;
+         setInterval(function () {
+            var base = parseInt(el.textContent, 10) || 300;
+            var delta = Math.floor(Math.random() * 7) - 3;
+            var next = Math.max(180, Math.min(420, base + delta));
+            el.textContent = next;
+         }, 4000);
+      })();
+
+      // Data dinamica "disponivel ate"
+      (function () {
+         var el = document.getElementById('live-available-until');
+         if (!el) return;
+         var d = new Date();
+         d.setDate(d.getDate() + 1);
+         var dd = String(d.getDate()).padStart(2, '0');
+         var mm = String(d.getMonth() + 1).padStart(2, '0');
+         var yy = d.getFullYear();
+         el.textContent = dd + '/' + mm + '/' + yy;
+      })();
+   </script>
+
+   <!-- Botao flutuante WhatsApp -->
+   <a href="https://wa.me/55SEUNUMEROAQUI?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20oferta%20VIP%20do%20Vision%20Pure"
+      class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+         <path fill="currentColor" d="M16.003 2.667c-7.364 0-13.334 5.97-13.334 13.333 0 2.347.614 4.638 1.78 6.66L2.667 29.333l6.84-1.79a13.27 13.27 0 0 0 6.493 1.69h.006c7.36 0 13.333-5.97 13.333-13.333S23.367 2.667 16.003 2.667zm0 24.31a11.05 11.05 0 0 1-5.628-1.54l-.403-.24-4.06 1.064 1.084-3.957-.263-.41a11.024 11.024 0 0 1-1.69-5.894c0-6.117 4.977-11.094 11.097-11.094 2.963 0 5.748 1.155 7.844 3.252a11.02 11.02 0 0 1 3.247 7.846c-.003 6.117-4.98 11.094-11.228 11.094zm6.083-8.31c-.333-.167-1.97-.973-2.277-1.083-.306-.113-.527-.167-.75.167-.222.333-.86 1.083-1.056 1.305-.193.222-.39.25-.722.083-.333-.166-1.407-.518-2.68-1.652-.99-.883-1.658-1.972-1.852-2.305-.193-.333-.02-.513.146-.68.15-.15.333-.39.5-.583.166-.193.222-.333.333-.555.111-.222.055-.417-.028-.583-.084-.167-.75-1.805-1.028-2.472-.27-.65-.546-.563-.75-.572-.193-.01-.416-.012-.638-.012-.222 0-.583.083-.889.417-.305.333-1.166 1.14-1.166 2.777s1.194 3.222 1.361 3.445c.166.222 2.347 3.586 5.69 5.027.795.343 1.416.547 1.9.7.798.254 1.524.218 2.098.132.64-.095 1.97-.806 2.247-1.585.278-.778.278-1.444.195-1.585-.083-.139-.305-.222-.638-.39z"/>
+      </svg>
+      <span class="wa-float-text">Fale conosco</span>
+   </a>
+
+   <!-- Confetes ao carregar a pagina (estilo VIP) -->
+   <script>
+      (function () {
+         if (typeof confetti !== 'function') return;
+         var duration = 1500;
+         var animationEnd = Date.now() + duration;
+         var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 9999 };
+         function randomInRange(min, max) { return Math.random() * (max - min) + min; }
+         confetti({
+            particleCount: 90,
+            spread: 90,
+            origin: { y: 0.6 },
+            colors: ['#D4AF37', '#C9A227', '#B8860B', '#FAB005', '#FFFFFF']
+         });
+         var interval = setInterval(function () {
+            var timeLeft = animationEnd - Date.now();
+            if (timeLeft <= 0) return clearInterval(interval);
+            var particleCount = 22 * (timeLeft / duration);
+            confetti(Object.assign({}, defaults, {
+               particleCount: particleCount,
+               origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+               colors: ['#D4AF37', '#FAB005', '#FFFFFF']
+            }));
+            confetti(Object.assign({}, defaults, {
+               particleCount: particleCount,
+               origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+               colors: ['#C9A227', '#B8860B', '#FFFFFF']
+            }));
+         }, 250);
+      })();
+   </script>
+
+</body>
+</html>
