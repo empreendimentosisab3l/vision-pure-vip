@@ -43,7 +43,7 @@ a { color: inherit; }
 .vip-header {
    background: linear-gradient(135deg, var(--black) 0%, var(--black-3) 100%);
    color: #fff;
-   padding: 14px 16px;
+   padding: 10px 16px;
    text-align: center;
    border-bottom: 3px solid var(--gold);
 }
@@ -117,7 +117,7 @@ a { color: inherit; }
 .vp-hero {
    background: linear-gradient(135deg, var(--black) 0%, var(--black-2) 50%, var(--black) 100%);
    color: #fff;
-   padding: 50px 20px 60px;
+   padding: 28px 20px 32px;
    text-align: center;
    position: relative;
    overflow: hidden;
@@ -139,66 +139,72 @@ a { color: inherit; }
    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
    color: var(--black);
    font-weight: 900;
-   font-size: 13px;
+   font-size: 12px;
    letter-spacing: 2px;
-   padding: 8px 22px;
+   padding: 6px 18px;
    border-radius: 999px;
-   margin-bottom: 22px;
+   margin-bottom: 14px;
    box-shadow: rgba(212,175,55,0.4) 0 6px 18px;
    text-transform: uppercase;
 }
 
 .vp-hero h1 {
    font-family: 'Playfair Display', Georgia, serif;
-   font-size: 38px;
+   font-size: 32px;
    line-height: 1.15;
    font-weight: 700;
-   margin: 0 0 16px;
+   margin: 0 0 12px;
    letter-spacing: -0.5px;
 }
 .vp-hero h1 strong { color: var(--gold); font-weight: 800; }
 .vp-hero-sub {
-   font-size: 18px;
-   line-height: 1.5;
+   font-size: 16px;
+   line-height: 1.45;
    color: #e0e0e0;
-   margin: 0 0 28px;
+   margin: 0 0 18px;
 }
 .vp-hero-sub em { color: var(--gold-light); font-style: italic; font-weight: 600; }
 
 .vp-hero-arrow {
-   margin: 8px auto 22px;
+   margin: 4px auto 12px;
    color: var(--gold);
    animation: bounce 1.6s ease-in-out infinite;
    display: flex; justify-content: center;
 }
-.vp-hero-arrow svg { width: 38px; height: 38px; }
+.vp-hero-arrow svg { width: 28px; height: 28px; }
 @keyframes bounce {
    0%, 100% { transform: translateY(0); }
-   50% { transform: translateY(10px); }
+   50% { transform: translateY(8px); }
 }
 
 /* Countdown */
 .vp-countdown {
    display: inline-flex;
-   gap: 24px;
-   padding: 18px 30px;
+   gap: 20px;
+   padding: 14px 26px;
    border-radius: 14px;
    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-2) 50%, var(--gold-dark) 100%);
    border: 3px solid rgba(255,255,255,0.85);
    box-shadow: rgba(212,175,55,0.35) 0 12px 32px, rgba(255,255,255,0.3) 0 1px 0 inset;
-   min-width: 280px;
+   min-width: 260px;
 }
-.vp-countdown-cell { display: flex; flex-direction: column; align-items: center; min-width: 90px; }
+.vp-countdown-cell { display: flex; flex-direction: column; align-items: center; min-width: 84px; }
 .vp-countdown-number {
-   font-size: 56px; font-weight: 900;
+   font-size: 44px; font-weight: 900;
    color: var(--black); line-height: 1;
    font-variant-numeric: tabular-nums;
    letter-spacing: -1px;
 }
 .vp-countdown-label {
-   font-size: 13px; font-weight: 700;
+   font-size: 12px; font-weight: 700;
    color: var(--black); margin-top: 4px;
    text-transform: uppercase; letter-spacing: 1px;
+}
+
+/* Mobile: hero pode crescer um pouco (scroll permitido) */
+@media (max-width: 600px) {
+   .vp-hero { padding: 32px 18px 36px; }
+   .vp-hero h1 { font-size: 28px; }
 }
 
 /* =========================================================
