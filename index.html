@@ -8,6 +8,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles.css">
    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
@@ -49,18 +50,20 @@
       </div>
    </section>
 
-   <!-- BANNER WHATSAPP R$ 150 -->
-   <section class="wa-banner" aria-label="Resgate seu desconto exclusivo">
-      <div class="wa-banner-inner">
-         <span class="wa-banner-tag">Oferta Exclusiva</span>
-         <h2 class="wa-banner-title">Voce ganhou <strong>R$ 150 DE DESCONTO</strong> em todos os produtos!</h2>
-         <p class="wa-banner-sub">Converse agora com nosso atendente e resgate seu cupom antes que acabe.</p>
-         <a class="wa-banner-cta"
-            href="https://wa.me/554764277564?text=Ol%C3%A1!%20Quero%20resgatar%20meu%20desconto%20de%20R%24150%20no%20Vision%20Pure"
-            target="_blank" rel="noopener">
-            <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.003 2.667c-7.364 0-13.334 5.97-13.334 13.333 0 2.347.614 4.638 1.78 6.66L2.667 29.333l6.84-1.79a13.27 13.27 0 0 0 6.493 1.69h.006c7.36 0 13.333-5.97 13.333-13.333S23.367 2.667 16.003 2.667zm6.083 16c-.333-.167-1.97-.973-2.277-1.083-.306-.113-.527-.167-.75.167-.222.333-.86 1.083-1.056 1.305-.193.222-.39.25-.722.083-.333-.166-1.407-.518-2.68-1.652-.99-.883-1.658-1.972-1.852-2.305-.193-.333-.02-.513.146-.68.15-.15.333-.39.5-.583.166-.193.222-.333.333-.555.111-.222.055-.417-.028-.583-.084-.167-.75-1.805-1.028-2.472-.27-.65-.546-.563-.75-.572-.193-.01-.416-.012-.638-.012-.222 0-.583.083-.889.417-.305.333-1.166 1.14-1.166 2.777s1.194 3.222 1.361 3.445c.166.222 2.347 3.586 5.69 5.027.795.343 1.416.547 1.9.7.798.254 1.524.218 2.098.132.64-.095 1.97-.806 2.247-1.585.278-.778.278-1.444.195-1.585-.083-.139-.305-.222-.638-.39z"/></svg>
-            Falar com atendente
-         </a>
+   <!-- WHATSAPP BANNER (estilo Power) -->
+   <section class="wpp-banner">
+      <div class="container">
+         <div class="wpp-banner-inner">
+            <div>
+               <span class="desconto-tag">Oferta Exclusiva</span>
+               <h3>Voce ganhou <strong>R$ 150 DE DESCONTO</strong> em todos os produtos!</h3>
+               <p>Converse agora com nosso atendente e resgate seu cupom antes que acabe.</p>
+            </div>
+            <a href="https://api.whatsapp.com/send/?phone=554764277564&text=Ol%C3%A1%21+Quero+resgatar+meu+desconto+de+R%24150+nos+produtos+Vision+Pure" target="_blank" class="btn-wpp-banner">
+               <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+               Falar com atendente
+            </a>
+         </div>
       </div>
    </section>
 
@@ -402,65 +405,53 @@
       })();
    </script>
 
-   <!-- Botao flutuante WhatsApp -->
-   <a href="https://wa.me/554764277564?text=Ol%C3%A1!%20Quero%20resgatar%20meu%20desconto%20de%20R%24150%20no%20Vision%20Pure"
-      class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp e resgatar R$ 150 de desconto">
-      <svg viewBox="0 0 32 32" aria-hidden="true">
-         <path fill="currentColor" d="M16.003 2.667c-7.364 0-13.334 5.97-13.334 13.333 0 2.347.614 4.638 1.78 6.66L2.667 29.333l6.84-1.79a13.27 13.27 0 0 0 6.493 1.69h.006c7.36 0 13.333-5.97 13.333-13.333S23.367 2.667 16.003 2.667zm0 24.31a11.05 11.05 0 0 1-5.628-1.54l-.403-.24-4.06 1.064 1.084-3.957-.263-.41a11.024 11.024 0 0 1-1.69-5.894c0-6.117 4.977-11.094 11.097-11.094 2.963 0 5.748 1.155 7.844 3.252a11.02 11.02 0 0 1 3.247 7.846c-.003 6.117-4.98 11.094-11.228 11.094zm6.083-8.31c-.333-.167-1.97-.973-2.277-1.083-.306-.113-.527-.167-.75.167-.222.333-.86 1.083-1.056 1.305-.193.222-.39.25-.722.083-.333-.166-1.407-.518-2.68-1.652-.99-.883-1.658-1.972-1.852-2.305-.193-.333-.02-.513.146-.68.15-.15.333-.39.5-.583.166-.193.222-.333.333-.555.111-.222.055-.417-.028-.583-.084-.167-.75-1.805-1.028-2.472-.27-.65-.546-.563-.75-.572-.193-.01-.416-.012-.638-.012-.222 0-.583.083-.889.417-.305.333-1.166 1.14-1.166 2.777s1.194 3.222 1.361 3.445c.166.222 2.347 3.586 5.69 5.027.795.343 1.416.547 1.9.7.798.254 1.524.218 2.098.132.64-.095 1.97-.806 2.247-1.585.278-.778.278-1.444.195-1.585-.083-.139-.305-.222-.638-.39z"/>
-      </svg>
-      <span class="wa-float-text">
-         <strong>Falar agora</strong>
-         <small>R$ 150 de desconto</small>
-      </span>
+   <!-- WHATSAPP FLOAT (estilo Power) -->
+   <a href="https://api.whatsapp.com/send/?phone=554764277564&text=Ol%C3%A1%21+Quero+resgatar+meu+desconto+de+R%24150+nos+produtos+Vision+Pure" target="_blank" class="wpp-float" title="Fale conosco no WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+      <span class="wpp-label">Falar agora<small>R$ 150 de desconto</small></span>
    </a>
 
-   <!-- EXIT-INTENT POPUP WHATSAPP -->
-   <div id="exit-popup" class="exit-popup" aria-hidden="true">
-      <div class="exit-popup-card">
-         <button class="exit-popup-close" aria-label="Fechar">&times;</button>
-         <span class="exit-popup-tag">Espere!</span>
-         <h3>Opa, nao saia agora!</h3>
-         <p>Converse com nosso atendente. Podemos te ajudar a garantir <strong>R$ 150 de desconto</strong> no seu pedido.</p>
-         <a class="exit-popup-cta"
-            href="https://wa.me/554764277564?text=Ol%C3%A1!%20Vim%20pelo%20pop-up%20e%20quero%20meu%20desconto%20de%20R%24150%20no%20Vision%20Pure"
-            target="_blank" rel="noopener">
-            <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.003 2.667c-7.364 0-13.334 5.97-13.334 13.333 0 2.347.614 4.638 1.78 6.66L2.667 29.333l6.84-1.79a13.27 13.27 0 0 0 6.493 1.69h.006c7.36 0 13.333-5.97 13.333-13.333S23.367 2.667 16.003 2.667zm6.083 16c-.333-.167-1.97-.973-2.277-1.083-.306-.113-.527-.167-.75.167-.222.333-.86 1.083-1.056 1.305-.193.222-.39.25-.722.083-.333-.166-1.407-.518-2.68-1.652-.99-.883-1.658-1.972-1.852-2.305-.193-.333-.02-.513.146-.68.15-.15.333-.39.5-.583.166-.193.222-.333.333-.555.111-.222.055-.417-.028-.583-.084-.167-.75-1.805-1.028-2.472-.27-.65-.546-.563-.75-.572-.193-.01-.416-.012-.638-.012-.222 0-.583.083-.889.417-.305.333-1.166 1.14-1.166 2.777s1.194 3.222 1.361 3.445c.166.222 2.347 3.586 5.69 5.027.795.343 1.416.547 1.9.7.798.254 1.524.218 2.098.132.64-.095 1.97-.806 2.247-1.585.278-.778.278-1.444.195-1.585-.083-.139-.305-.222-.638-.39z"/></svg>
+   <!-- EXIT INTENT POPUP (estilo Power) -->
+   <div class="exit-overlay" id="exitPopup">
+      <div class="exit-modal">
+         <button class="close-x" id="closeExit" aria-label="Fechar">&times;</button>
+         <div class="wpp-icon-big">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+         </div>
+         <h3>Opa, nao sai agora!</h3>
+         <p>Converse com nosso atendente! Podemos te ajudar a garantir <strong>R$ 150 de desconto</strong> no seu pedido.</p>
+         <a href="https://api.whatsapp.com/send/?phone=554764277564&text=Ol%C3%A1%21+Vim+pelo+pop-up+e+quero+meu+desconto+de+R%24150+nos+produtos+Vision+Pure" target="_blank" class="btn-exit-wpp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
             Falar com o atendente
          </a>
-         <button class="exit-popup-no">Nao, prefiro pagar o valor cheio</button>
+         <button class="no-thanks" id="noThanks">Nao, obrigado</button>
       </div>
    </div>
 
    <script>
-      (function () {
-         var popup = document.getElementById('exit-popup');
+      // EXIT INTENT POPUP (estilo Power)
+      (function() {
+         var popup = document.getElementById('exitPopup');
          if (!popup) return;
          var shown = false;
-         function show() {
+         function showPopup() {
             if (shown) return;
             shown = true;
-            popup.classList.add('open');
-            popup.setAttribute('aria-hidden', 'false');
+            popup.classList.add('show');
          }
-         function hide() {
-            popup.classList.remove('open');
-            popup.setAttribute('aria-hidden', 'true');
+         function hidePopup() {
+            popup.classList.remove('show');
          }
-         popup.querySelector('.exit-popup-close').addEventListener('click', hide);
-         popup.querySelector('.exit-popup-no').addEventListener('click', hide);
-         popup.addEventListener('click', function (e) { if (e.target === popup) hide(); });
-         // Desktop: mouse sai pelo topo
-         document.addEventListener('mouseleave', function (e) {
-            if (e.clientY <= 0) show();
-         });
-         // Mobile + fallback: ociosidade de 45s
-         setTimeout(show, 45000);
-         // Scroll rapido pra cima
+         document.getElementById('closeExit').addEventListener('click', hidePopup);
+         document.getElementById('noThanks').addEventListener('click', hidePopup);
+         popup.addEventListener('click', function(e) { if (e.target === popup) hidePopup(); });
+         document.addEventListener('mouseleave', function(e) { if (e.clientY <= 0) showPopup(); });
+         setTimeout(showPopup, 45000);
          var lastY = window.scrollY, lastT = Date.now();
-         window.addEventListener('scroll', function () {
+         window.addEventListener('scroll', function() {
             var dy = window.scrollY - lastY;
             var dt = Date.now() - lastT;
-            if (dy < -200 && dt < 400) show();
+            if (dy < -200 && dt < 400) showPopup();
             lastY = window.scrollY; lastT = Date.now();
          }, { passive: true });
       })();
