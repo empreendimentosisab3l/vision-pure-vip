@@ -117,7 +117,7 @@ a { color: inherit; }
 .vp-hero {
    background: linear-gradient(135deg, var(--black) 0%, var(--black-2) 50%, var(--black) 100%);
    color: #fff;
-   padding: 20px 20px 22px;
+   padding: 28px 20px 32px;
    text-align: center;
    position: relative;
    overflow: hidden;
@@ -139,62 +139,82 @@ a { color: inherit; }
    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
    color: var(--black);
    font-weight: 900;
-   font-size: 11px;
-   letter-spacing: 1.5px;
-   padding: 5px 16px;
+   font-size: 12px;
+   letter-spacing: 2px;
+   padding: 6px 18px;
    border-radius: 999px;
-   margin-bottom: 10px;
+   margin-bottom: 14px;
    box-shadow: rgba(212,175,55,0.4) 0 6px 18px;
    text-transform: uppercase;
 }
 
 .vp-hero h1 {
    font-family: 'Playfair Display', Georgia, serif;
-   font-size: 26px;
-   line-height: 1.12;
+   font-size: 32px;
+   line-height: 1.15;
    font-weight: 700;
-   margin: 0 0 8px;
+   margin: 0 0 12px;
    letter-spacing: -0.5px;
 }
 .vp-hero h1 strong { color: var(--gold); font-weight: 800; }
 .vp-hero-sub {
-   font-size: 14px;
-   line-height: 1.4;
+   font-size: 16px;
+   line-height: 1.45;
    color: #e0e0e0;
-   margin: 0 0 14px;
+   margin: 0 0 18px;
 }
 .vp-hero-sub em { color: var(--gold-light); font-style: italic; font-weight: 600; }
 
-/* Countdown compacto */
+.vp-hero-arrow {
+   margin: 4px auto 12px;
+   color: var(--gold);
+   animation: bounce 1.6s ease-in-out infinite;
+   display: flex; justify-content: center;
+}
+.vp-hero-arrow svg { width: 28px; height: 28px; }
+@keyframes bounce {
+   0%, 100% { transform: translateY(0); }
+   50% { transform: translateY(8px); }
+}
+
+/* Countdown */
 .vp-countdown {
    display: inline-flex;
-   gap: 16px;
-   padding: 10px 22px;
-   border-radius: 12px;
+   gap: 20px;
+   padding: 14px 26px;
+   border-radius: 14px;
    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-2) 50%, var(--gold-dark) 100%);
-   border: 2px solid rgba(255,255,255,0.85);
-   box-shadow: rgba(212,175,55,0.35) 0 8px 22px, rgba(255,255,255,0.3) 0 1px 0 inset;
-   min-width: 220px;
+   border: 3px solid rgba(255,255,255,0.85);
+   box-shadow: rgba(212,175,55,0.35) 0 12px 32px, rgba(255,255,255,0.3) 0 1px 0 inset;
+   min-width: 260px;
 }
-.vp-countdown-cell { display: flex; flex-direction: column; align-items: center; min-width: 70px; }
+.vp-countdown-cell { display: flex; flex-direction: column; align-items: center; min-width: 84px; }
 .vp-countdown-number {
-   font-size: 32px; font-weight: 900;
+   font-size: 44px; font-weight: 900;
    color: var(--black); line-height: 1;
    font-variant-numeric: tabular-nums;
    letter-spacing: -1px;
 }
 .vp-countdown-label {
-   font-size: 10px; font-weight: 700;
-   color: var(--black); margin-top: 2px;
+   font-size: 12px; font-weight: 700;
+   color: var(--black); margin-top: 4px;
    text-transform: uppercase; letter-spacing: 1px;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-   .vp-hero { padding: 22px 18px 24px; }
-   .vp-hero h1 { font-size: 22px; }
-   .vp-hero-sub { font-size: 13px; }
+/* Mobile: compactar para caber CTA na primeira dobra */
+@media (max-width: 768px) {
+   .vip-header { display: none; }
+   .vp-hero { padding: 20px 18px 22px; }
+   .vp-hero-inner { max-width: 100%; }
+   .vip-badge { font-size: 11px; letter-spacing: 1.5px; padding: 5px 14px; margin-bottom: 10px; }
+   .vp-hero h1 { font-size: 22px; line-height: 1.15; margin: 0 0 8px; }
+   .vp-hero h1 br { display: none; }
+   .vp-hero-sub { font-size: 13px; line-height: 1.4; margin: 0 0 12px; }
+   .vp-hero-arrow { display: none; }
+   .vp-countdown { gap: 16px; padding: 10px 22px; min-width: 220px; }
+   .vp-countdown-cell { min-width: 70px; }
    .vp-countdown-number { font-size: 28px; }
+   .vp-countdown-label { font-size: 10px; }
 }
 
 /* =========================================================
